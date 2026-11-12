@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - FF Tournament</title>
+  <style>
+    :root {
+      --bg-page: #F4F6F9;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #EEF2F6;
+      --border: #E2E8F0;
+      --text-main: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --accent: #FF5E00;
+      --accent-soft: rgba(255, 94, 0, 0.12);
+      --gold: #D97706;
+      --green: #16A34A;
+      --green-soft: rgba(22, 163, 74, 0.12);
+      --red: #DC2626;
+      --red-soft: rgba(220, 38, 38, 0.10);
+      --blue: #2563EB;
+      --blue-soft: rgba(37, 99, 235, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-page: #0B1120;
+        --bg-card: #111827;
+        --bg-subtle: #1E293B;
+        --border: #273549;
+        --text-main: #F1F5F9;
+        --text-body: #CBD5E1;
+        --text-muted: #94A3B8;
+        --accent: #FF6B1A;
+        --accent-soft: rgba(255, 107, 26, 0.16);
+        --gold: #F59E0B;
+        --green: #22C55E;
+        --green-soft: rgba(34, 197, 94, 0.15);
+        --red: #F87171;
+        --red-soft: rgba(248, 113, 113, 0.14);
+        --blue: #60A5FA;
+        --blue-soft: rgba(96, 165, 250, 0.15);
+      }
+    }
+
+    html.dark {
+      --bg-page: #0B1120;
+      --bg-card: #111827;
+      --bg-subtle: #1E293B;
+      --border: #273549;
+      --text-main: #F1F5F9;
+      --text-body: #CBD5E1;
+      --text-muted: #94A3B8;
+      --accent: #FF6B1A;
+      --accent-soft: rgba(255, 107, 26, 0.16);
+      --gold: #F59E0B;
+      --green: #22C55E;
+      --green-soft: rgba(34, 197, 94, 0.15);
+      --red: #F87171;
+      --red-soft: rgba(248, 113, 113, 0.14);
+      --blue: #60A5FA;
+      --blue-soft: rgba(96, 165, 250, 0.15);
+    }
+
+    html.light {
+      --bg-page: #F4F6F9;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #EEF2F6;
+      --border: #E2E8F0;
+      --text-main: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --accent: #FF5E00;
+      --accent-soft: rgba(255, 94, 0, 0.12);
+      --gold: #D97706;
+      --green: #16A34A;
+      --green-soft: rgba(22, 163, 74, 0.12);
+      --red: #DC2626;
+      --red-soft: rgba(220, 38, 38, 0.10);
+      --blue: #2563EB;
+      --blue-soft: rgba(37, 99, 235, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 16px;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Bengali", Arial, sans-serif;
+      line-height: 1.7;
+      font-size: 14.5px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .meta {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .callout {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      font-size: 13.5px;
+    }
+
+    .callout-green {
+      background: var(--green-soft);
+      border-left: 3px solid var(--green);
+    }
+
+    .callout-blue {
+      background: var(--blue-soft);
+      border-left: 3px solid var(--blue);
+    }
+
+    .callout-red {
+      background: var(--red-soft);
+      border-left: 3px solid var(--red);
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 10px 0 20px;
+    }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var t = params.get("theme");
+      if (t === "dark" || t === "light") {
+        document.documentElement.classList.add(t);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <span class="badge">🛡️ OFFICIAL PRIVACY POLICY</span>
+      <h1>গোপনীয়তা নীতি (Privacy Policy)</h1>
+      <div class="meta">অ্যাপ: <strong>FF Tournament</strong> (<code>com.fftornament.best</code>) &bull; সর্বশেষ আপডেট: নভেম্বর ২০২৬</div>
+      <p>
+        <strong>FF Tournament</strong> ব্যবহারকারীর ব্যক্তিগত তথ্যের গোপনীয়তা ও নিরাপত্তাকে সর্বোচ্চ অগ্রাধিকার দেয়। আমাদের অ্যাপ ব্যবহার করার সময় আপনার কোন তথ্য সংগ্রহ করা হয়, কীভাবে তা সংরক্ষণ ও ব্যবহার করা হয় এবং আপনার তথ্য সুরক্ষার অধিকার কী—তা এই নীতিমালায় স্পষ্টভাবে উল্লেখ করা হলো।
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>১. আমরা কী কী ব্যক্তিগত তথ্য সংগ্রহ করি</h2>
+      <p>অ্যাকাউন্ট তৈরি, টুর্নামেন্টে অংশগ্রহণ ও পেমেন্ট সেবা নিশ্চিত করতে আমরা নিচের তথ্যগুলো সংগ্রহ করি:</p>
+      <ul>
+        <li><strong>নাম ও User ID:</strong> রেজিস্ট্রেশনের সময় আপনার দেওয়া নাম / গেমার ট্যাগ (<code>displayName</code>) এবং সিস্টেম থেকে স্বয়ংক্রিয়ভাবে তৈরি ইউনিক User ID (<code>userId</code>) সংগ্রহ করা হয়।</li>
+        <li><strong>গেমের পরিচয় (Free Fire Identity):</strong> টুর্নামেন্ট ম্যাচের অংশগ্রহণ ও কিল/র‍্যাংক যাচাইয়ের জন্য আপনার <strong>Free Fire UID</strong> এবং <strong>In-Game Name (IGN)</strong> সংরক্ষণ করা হয়।</li>
+        <li><strong>ইমেইল ঠিকানা (Email Address):</strong> নিরাপদ লগইন, পাসওয়ার্ড রিসেট (Forgot Password) এবং জরুরি অ্যাকাউন্ট সংক্রান্ত বার্তা পাঠানোর জন্য আপনার ইমেইল সংরক্ষণ করা হয়।</li>
+        <li><strong>মোবাইল নম্বর (Mobile Number):</strong> অ্যাকাউন্ট তৈরি বা লগইনের জন্য আমরা সাধারণ ফোন নম্বর বাধ্যতামূলক করি না; তবে <strong>Deposit</strong> বা <strong>Withdrawal</strong> রিকোয়েস্ট করার সময় আপনি যে bKash বা Nagad নম্বর (Sender / Receiver Number) প্রদান করেন, তা পেমেন্ট যাচাই ও টাকা পাঠানোর জন্য সংরক্ষণ করা হয়।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>২. Deposit ও Withdrawal সংক্রান্ত তথ্য কীভাবে সংরক্ষণ করা হয়</h2>
+      <ul>
+        <li><strong>Deposit তথ্য:</strong> পেমেন্ট মেথড (bKash / Nagad), ডিপোজিটের পরিমাণ, সেন্ডার মোবাইল নম্বর, ট্রানজাকশন আইডি (<code>TrxID</code>), তারিখ ও সময় এবং ভেরিফিকেশন স্ট্যাটাস (<code>PENDING</code>, <code>UNDER_REVIEW</code>, <code>APPROVED</code>, <code>REJECTED</code>) সংরক্ষণ করা হয়।</li>
+        <li><strong>Withdrawal তথ্য:</strong> পেমেন্ট মেথড, উত্তোলনের পরিমাণ, রিসিভার মোবাইল নম্বর, তারিখ ও সময় এবং পেমেন্ট স্ট্যাটাস (<code>PENDING</code>, <code>COMPLETED</code>, <code>REJECTED</code>) রাখা হয়।</li>
+        <li><strong>অপরিবর্তনীয় আর্থিক লেজার:</strong> প্রতারণা বা ডুপ্লিকেট দাবি প্রতিরোধ এবং সঠিক হিসাব বজায় রাখতে প্রতিটি অনুমোদিত ডিপোজিট, উইথড্রয়াল, এন্ট্রি ফি ও রিফান্ড সার্ভারে স্থায়ী ট্রানজাকশন হিস্ট্রিতে রেকর্ড করা হয়।</li>
+      </ul>
+      <div class="callout callout-blue">
+        <strong>গুরুত্বপূর্ণ নিরাপত্তা তথ্য:</strong> আমরা কখনোই আপনার bKash, Nagad বা ব্যাংক অ্যাকাউন্টের <strong>PIN, Password বা OTP</strong> চাই না এবং সংরক্ষণ করি না।
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>৩. ওয়ালেট ব্যালেন্স ও ম্যাচ খেলার তথ্য কীভাবে রাখা হয়</h2>
+      <ul>
+        <li><strong>ওয়ালেট ব্যালেন্স:</strong> আপনার অ্যাকাউন্টের মোট ব্যালেন্স, Deposit Balance, Winning Balance এবং পেন্ডিং উইথড্রয়ালে থাকা ব্যালেন্স পয়সা-ভিত্তিক নিখুঁত হিসাবে সার্ভারে সংরক্ষিত থাকে, যাতে কোনো গণনাগত ভুল না হয়।</li>
+        <li><strong>টুর্নামেন্ট ও ম্যাচের তথ্য:</strong> আপনি কোন টুর্নামেন্টে জয়েন করেছেন, আপনার টিমের নাম, স্লট নম্বর, কাটা হওয়া এন্ট্রি ফি, ম্যাচের ফলাফল, আপনার ক্লেইম করা কিল ও র‍্যাংক, প্রমাণস্বরূপ দেওয়া স্ক্রিনশট লিংক (<code>evidenceUrl</code>), এবং প্রাপ্ত পুরস্কারের তথ্য আপনার অ্যাকাউন্টের সাথে যুক্ত থাকে।</li>
+        <li><strong>সাপোর্ট ও রিপোর্ট তথ্য:</strong> আপনি কোনো হেল্প টিকিট, ম্যাচ আপিল বা চিটার রিপোর্ট জমা দিলে তার বিবরণ এবং অ্যাডমিনের উত্তর সংরক্ষিত থাকে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৪. Firebase-এ কোন কোন তথ্য রাখা হয়</h2>
+      <p>অ্যাপের সম্পূর্ণ ব্যাকএন্ড, ডেটাবেস ও নিরাপত্তা ব্যবস্থাপনা <strong>Google Firebase</strong>-এর মাধ্যমে পরিচালিত হয়। Firebase-এর নিচের সেবাগুলোতে তথ্য সংরক্ষিত থাকে:</p>
+      <ul>
+        <li><strong>Firebase Authentication:</strong> আপনার ইমেইল, এনক্রিপ্টেড পাসওয়ার্ড প্রমাণীকরণ এবং ইউনিক User ID (<code>UID</code>)।</li>
+        <li><strong>Cloud Firestore Database:</strong> আপনার প্রোফাইল তথ্য (নাম, ইমেইল, Free Fire UID/IGN, রোল ও ব্যান স্ট্যাটাস), ওয়ালেট ব্যালেন্স ও ট্রানজাকশন হিস্ট্রি, Deposit ও Withdrawal রিকোয়েস্ট, ম্যাচ রেজিস্ট্রেশন ও রেজাল্ট সাবমিশন, ইন-অ্যাপ নোটিফিকেশন, সাপোর্ট টিকিট এবং অ্যাকাউন্ট ডিলিশন রিকোয়েস্ট।</li>
+        <li><strong>Firebase Cloud Messaging (FCM):</strong> টুর্নামেন্টের রুম আইডি-পাসওয়ার্ড, ম্যাচের সময়সূচি এবং পেমেন্ট সংক্রান্ত তাৎক্ষণিক পুশ নোটিফিকেশন পাঠানোর জন্য ডিভাইস নোটিফিকেশন টোকেন।</li>
+        <li><strong>Firebase Realtime Database &amp; Storage:</strong> অ্যাপের নতুন ভার্সন আপডেট তথ্য, মেইনটেন্যান্স নোটিশ এবং অফিসিয়াল আপডেট ফাইল সরবরাহ।</li>
+        <li><strong>Firebase Analytics:</strong> অ্যাপের কর্মক্ষমতা, বাগ/ক্র্যাশ শনাক্তকরণ এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করার জন্য সাধারণ ব্যবহারসংক্রান্ত প্রযুক্তিগত তথ্য।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৫. আপনার তথ্য কি অন্য কারও সঙ্গে শেয়ার করা হয়?</h2>
+      <div class="callout callout-green">
+        <strong>না — আমরা আপনার ব্যক্তিগত তথ্য (ইমেইল, মোবাইল নম্বর, পেমেন্ট নম্বর বা ট্রানজাকশন আইডি) কোনো তৃতীয় পক্ষ, বিজ্ঞাপনদাতা বা মার্কেটিং কোম্পানির কাছে কখনোই বিক্রি, ভাড়া বা শেয়ার করি না।</strong>
+      </div>
+      <ul style="margin-top: 10px;">
+        <li>অ্যাপ পরিচালনা ও ডেটা নিরাপত্তার জন্য কেবল <strong>Google Firebase</strong> সার্ভার ইনফ্রাস্ট্রাকচার ব্যবহৃত হয়।</li>
+        <li>অনুমোদিত প্ল্যাটফর্ম অ্যাডমিন ও মডারেটররা কেবল ডিপোজিট/উইথড্রয়াল যাচাই, ফলাফল অনুমোদন এবং সাপোর্ট প্রদানের জন্য প্রয়োজনীয় তথ্য দেখতে পারেন।</li>
+        <li>ম্যাচের স্বচ্ছতার জন্য টুর্নামেন্ট অংশগ্রহণকারীদের তালিকায় কেবল টিমের নাম ও Free Fire IGN/UID দেখানো হতে পারে; ব্যক্তিগত ইমেইল বা ফোন নম্বর অন্য কোনো প্লেয়ারের কাছে কখনোই প্রকাশ করা হয় না।</li>
+        <li>দেশের প্রচলিত আইন বা আদালতের বৈধ নির্দেশনা থাকলে কেবল আইনি বাধ্যবাধকতা পালনের স্বার্থে তথ্য প্রদান করা হতে পারে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৬. তথ্য সংরক্ষণের মেয়াদ ও নিরাপত্তা</h2>
+      <p>
+        আপনার অ্যাকাউন্ট সক্রিয় থাকা পর্যন্ত এবং সেবা প্রদানের প্রয়োজনে তথ্যগুলো সংরক্ষিত থাকে। সমস্ত ডেটা ট্রান্সমিশন এনক্রিপ্টেড (HTTPS/TLS) সংযোগের মাধ্যমে সম্পন্ন হয় এবং Firebase Security Rules-এর মাধ্যমে অননুমোদিত প্রবেশাধিকার (Unauthorized Access) থেকে সুরক্ষিত রাখা হয়। পাশাপাশি আপনার অ্যাকাউন্টের পাসওয়ার্ড গোপন রাখা আপনার নিজ দায়িত্ব।
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>৭. ইউজার কীভাবে নিজের অ্যাকাউন্ট ও তথ্য মুছে ফেলতে পারবেন</h2>
+      <p>আপনি যেকোনো সময় আপনার অ্যাকাউন্ট ও ব্যক্তিগত তথ্য মুছে ফেলার আবেদন করতে পারবেন:</p>
+      <ul>
+        <li>অ্যাপের ভেতরে <strong>Profile &rarr; Request Account Deletion</strong> অপশনে যান এবং কারণ উল্লেখ করে আবেদন জমা দিন।</li>
+        <li>অ্যাডমিন আপনার আবেদন যাচাই করে অনুমোদন দিলে আপনার অ্যাকাউন্টের প্রোফাইল তথ্য ও অ্যাক্সেস স্থায়ীভাবে নিষ্ক্রিয় ও মুছে ফেলা হবে।</li>
+      </ul>
+      <div class="callout callout-red">
+        <strong>গুরুত্বপূর্ণ দ্রষ্টব্য:</strong> অ্যাকাউন্ট ডিলিটের আবেদন করার আগে আপনার ওয়ালেটে থাকা অবশিষ্ট ব্যালেন্স উইথড্র বা ব্যবহার করে নেওয়ার পরামর্শ দেওয়া হচ্ছে। এছাড়া জালিয়াতি প্রতিরোধ ও আর্থিক হিসাবের স্বচ্ছতার জন্য পূর্বের ট্রানজাকশন অডিট রেকর্ড কেবল সীমিত অ্যাডমিন অডিটের স্বার্থে সংরক্ষিত থাকতে পারে।
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>৮. শিশুদের গোপনীয়তা ও নীতিমালার পরিবর্তন</h2>
+      <ul>
+        <li><strong>অপ্রাপ্তবয়স্ক ব্যবহারকারী:</strong> এই অ্যাপ ১৩ বছরের কম বয়সী শিশুদের জন্য নয়। ১৮ বছরের কম বয়সী কেউ আর্থিক লেনদেন-সংযুক্ত সেবা ব্যবহার করলে অভিভাবকের অনুমতি আবশ্যক।</li>
+        <li><strong>নীতিমালা আপডেট:</strong> প্রয়োজন অনুযায়ী এই Privacy Policy সময়ে সময়ে পরিবর্তন বা হালনাগাদ হতে পারে। বড় কোনো পরিবর্তন হলে অ্যাপের মাধ্যমে জানানো হবে।</li>
+        <li><strong>যোগাযোগ:</strong> গোপনীয়তা নীতি সংক্রান্ত যেকোনো প্রশ্ন বা তথ্য সংশোধনের অনুরোধের জন্য অ্যাপের <strong>Help &amp; Customer Support</strong> সেকশন অথবা আমাদের অফিসিয়াল টেলিগ্রাম/ফেসবুক চ্যানেলে যোগাযোগ করুন।</li>
+      </ul>
+    </div>
+
+    <div class="footer-note">
+      &copy; 2026 FF Tournament. সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </div>
+</body>
+</html>
+
